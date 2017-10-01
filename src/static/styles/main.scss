@@ -1,0 +1,245 @@
+@import "animate.css";
+@import "hover";
+
+body {
+  background: url('../images/headerpage.jpg') no-repeat;
+  background-size: 100% 100vh;
+  font-family: 'Open Sans', sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
+  position: relative;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.clearfix:after {
+  content: " ";
+  visibility: hidden;
+  display: block;
+  height: 0;
+  clear: both;
+}
+
+
+$primary-color: #012C40;
+$secondary-color: #00708C;
+$light-color: #DAEBF2;
+$highlight-color: #FF404C;
+$lowlight-color: #1CA5B8;
+
+$primary-font: 'Open Sans', sans-serif;
+$secondary-font: 'Source Sans Pro', sans-serif;
+$highlight-font: 'Federo', sans-serif;
+$font-awesome: FontAwesome;
+
+.f_os {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.hideScroll{
+  overflow: hidden
+}
+
+.f_ss {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.f_fed {
+  font-family: 'Federo', sans-serif;
+}
+
+p{
+  color: rgba(3,3,3,0.97);
+  font-size: 15px;
+  line-height: 1.5em;
+}
+
+h1{ font-size: 25px; }
+h2{ font-size: 23px; }
+h3{ font-size: 20px; }
+h4{ font-size: 18px; }
+h5{ font-size: 16px; }
+h6{ font-size: 14px; }
+
+
+
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+a:hover {
+  text-decoration: none;
+}
+.displaynone{
+  display: none;
+}
+
+.title{
+  font-size: 25px;
+  font-family: 'Source Sans Pro', sans-serif;
+  line-height: 1.1em;
+  padding-bottom: 10px;
+}
+
+.pull_right{
+  float: right;
+}
+
+.contents{
+  padding: 30px 20px;
+  p{
+    color: rgba(3,3,3,0.97);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    line-height: 1.5em;
+  }
+  .title{
+    margin-top: 20px;
+  }
+}
+
+/* Font Awesome */
+.fontawesome-icon-list .fa-hover a .fa {
+  width: 32px;
+  font-size: 14px;
+  display: inline-block;
+  text-align: right;
+  margin-right: 10px;
+}
+
+.fa {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+$bg: #f4f4f4;
+#root {
+  //background: $bg;
+}
+
+/*///////*/
+.borderforTitle {
+  text-align: center;
+  border-top: 2px solid #333333;
+  justify-content: center;
+  align-items: center;
+  display: table;
+  margin: 0 auto;
+  position: relative;
+  &:before{
+    content: '';
+  }
+}
+
+.contactMe{
+  display: block;
+  a.mailTo{
+    display: block;
+  }
+}
+
+a.mainButton{
+  padding: 10px 30px;
+  text-align: center;
+  font-family: $primary-font;
+  border: none;
+  background: $secondary-color;
+  color: $light-color;
+  display: table;
+  margin: 0 auto;
+  float: none;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s;
+  letter-spacing: -0.01em;
+  position: relative;
+  //border: 2px solid #012C40;
+  border-radius: 25px;
+  @media only screen and (max-width: 760px) {
+
+  }
+  @media only screen and (max-width: 450px) {
+    padding: 5px 20px;
+  }
+  &:hover{
+    background: $lowlight-color;
+    color: $light-color;
+    text-decoration: none;
+    letter-spacing: 0.3em;
+    position: relative;
+    &:before,&:after{
+      //content:'';
+      position: absolute;
+      height: 2px;
+      background: $light-color;
+      width: 100%;
+      left: 0;
+    }
+    &:before{
+      top: 0;
+    }
+    &:after{
+      bottom: 0;
+    }
+  }
+}
+
+.displaynone{
+  display: none;
+}
+
+
+/* effect-shine */
+a.effect-shine:hover,.shine-always {
+  -webkit-mask-image: linear-gradient(-75deg, rgba(0,0,0,.6) 30%, #000 50%, rgba(0,0,0,.6) 70%);
+  -webkit-mask-size: 200%;
+  animation: shine 5s infinite;
+}
+shine-always {
+  -webkit-mask-image: linear-gradient(-75deg, rgba(0,0,0,.6) 30%, #000 50%, rgba(0,0,0,.6) 70%);
+  -webkit-mask-size: 200%;
+  animation: shine-always 5s infinite;
+  transition-delay: 7s;
+}
+
+@-webkit-keyframes shine {
+  from {
+    -webkit-mask-position: 150%;
+  }
+
+  to {
+    -webkit-mask-position: -50%;
+  }
+}
+@-webkit-keyframes shine-always {
+  from {
+    -webkit-mask-position: 150%;
+  }
+
+  to {
+    -webkit-mask-position: -50%;
+  }
+}
+
+.footerWrap{
+  background-color: $primary-color;
+  padding: 20px 10px 10px;
+  p{
+    color: $light-color;
+    font-size: 13px;
+    font-family: $primary-font;
+  }
+}
