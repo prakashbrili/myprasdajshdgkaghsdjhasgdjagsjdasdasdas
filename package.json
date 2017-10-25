@@ -55,13 +55,16 @@
     "url": "https://github.com/alicoding/react-webpack-babel"
   },
   "dependencies": {
+    "charming": "^2.0.1",
     "hover.css": "^2.2.1",
     "lodash": "^3.10.1",
     "react": "^15.3.2",
     "react-dom": "^15.3.2",
     "react-redux": "^4.0.0",
     "react-router": "^2.0.1",
-    "redux": "^3.0.4"
+    "redux": "^3.0.4",
+    "semantic-ui-css": "^2.2.12",
+    "semantic-ui-react": "^0.74.2"
   },
   "scripts": {
     "start": "node scripts/start.js",

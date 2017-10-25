@@ -14,7 +14,7 @@ class Footer extends Component {
     render() {
 
         return (
-            <div className="footerWrap">
+            <div className="footerWrap clearfix">
                 <p>© 2017 by Prakash S. All rights reserved. Disclaimer, Privacy &amp; Policy </p>
             </div>
         );

@@ -8,7 +8,7 @@ class App extends Component {
     return (
       <div className="App">
         <Navbar />
-        <div className="App-header">
+        <div className="App-content">
           {this.props.children}
         </div>
           <Footer />
@@ -16,6 +16,5 @@ class App extends Component {
     );
   }
 }
-
 
 export default App;

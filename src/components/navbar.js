@@ -26,26 +26,26 @@ class NavBar extends Component {
         const navigationContainer = (<div className={classNames('navigation')}>
             <div className="navigationContent">
                 <ul>
-                    <li><a onClick={ () => this.navigationBtnClick('home')}></a></li>
-                    <li><Link to="pageOne" className="about effect-shine" onClick={ () => this.navigationBtnClick('home')}>About</Link></li>
+                    <li><Link to="/" className="about effect-shine" onClick={ () => this.navigationBtnClick('home')}>Home</Link></li>
+                    {/*<li><Link to="pageOne" className="about effect-shine" onClick={ () => this.navigationBtnClick('home')}>About</Link></li>*/}
                     <li><a href="/resume.pdf" className="resume effect-shine" target="_blank" onClick={ () => this.navigationBtnClick('home')}>Resume</a></li>
-                    {/* <li><Link to="pageTwo" className="work effect-shine" onClick={ () => this.navigationBtnClick('work')}>Work</Link></li>*/}
-                    {/*<li><Link href="/blog/" to="pageTwo" className="work effect-shine" onClick={ () => this.navigationBtnClick('home')}>Blog</Link></li>*/}
+                     <li><Link to="Work" className="work effect-shine" onClick={ () => this.navigationBtnClick('work')}>Work</Link></li>
+                    {/*<li><Link href="/blog/" to="pageTwo" className="work effect-shine" onClick={ () => this.navigationBtnClick('home')}>pageTow</Link></li>*/}
                     <li><a href="/blog/" target="_blank" className="work effect-shine" onClick={ () => this.navigationBtnClick('blog')}>Blog</a></li>
-                    <li href="#"><Link to="Contact" className="contact effect-shine" onClick={ () => this.navigationBtnClick('contact')}>Contact</Link></li>
+                    {/*<li href="#"><Link to="Contact" className="contact effect-shine" onClick={ () => this.navigationBtnClick('contact')}>Contact</Link></li>*/}
                 </ul>
             </div>
         </div>);
 
         return (
-            <div>
-                { this.state.navigationOpen ? navigationContainer : null}
-                <header className="headerWrap clearfix">
+
+                <header className="headerWrap App-content clearfix">
+                    { this.state.navigationOpen ? navigationContainer : null}
                     <div className="mobileWrapper"></div>
                     <div className={classNames('brandContainer', this.state.navigationOpen ? '' : '')}>
-                        <a href="#" className="brand">
+                        <Link to="/" href="#" className="brand">
                             <span>PSP</span>
-                        </a>
+                        </Link>
                     </div>
                     <div className="menuBtn">
                         <div onClick={() => this.menuButton()}
@@ -58,7 +58,6 @@ class NavBar extends Component {
                         </div>
                     </div>
                 </header>
-            </div>
         );
     }
 }
