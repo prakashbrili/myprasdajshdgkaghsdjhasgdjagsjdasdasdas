@@ -87,22 +87,22 @@ const dataSource = {
         {
             "type": "Responsive",
             "name": "bplctn",
-            "url": "http//bplctn.firmsitepreview.com/"
+            "url": "http://www.hbplawfirm.com/"
         },
         {
             "type": "Responsive",
             "name": "brsanc",
-            "url": "http//brsanc.firmsitepreview.com/"
+            "url": "http://www.asheborolawyers.com/"
         },
         {
             "type": "Responsive",
             "name": "barryresnick",
-            "url": "http//barryresnick.firmsitepreview.com/"
+            "url": "http://www.barryresnick.com/"
         },
         {
             "type": "Responsive",
             "name": "cacsama",
-            "url": "http//cacsama.firmsitepreview.com/"
+            "url": "http://www.caseylundreganlaw.com/"
         },
         {
             "type": "Responsive",

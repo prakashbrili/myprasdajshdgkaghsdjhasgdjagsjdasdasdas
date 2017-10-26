@@ -43,7 +43,7 @@ class Projects extends Component {
         if (this.state.count < this.state.dataSourceLength) {
             if(this.state.countToShow){
                 this.setState({
-                    count: this.state.countToShow + 10,
+                    count: this.state.dataSourceLength,
                     popAnimation: 'scale-in-ver-top',
                 })
             }else{
