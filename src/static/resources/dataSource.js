@@ -132,7 +132,7 @@ const dataSource = {
         {
             "type": "Responsive",
             "name": "dmswcc",
-            "url": "http//dmswcc.firmsitepreview.com/"
+            "url": "http://www.davidsternberg-law.com/"
         },
         {
             "type": "Responsive",

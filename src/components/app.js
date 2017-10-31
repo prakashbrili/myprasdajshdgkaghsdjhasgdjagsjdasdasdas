@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 import Navbar from './navbar';
 import Footer from './footer';
-
+import Mail from './mail'
 class App extends Component {
   render() {
     return (
@@ -11,7 +11,8 @@ class App extends Component {
         <div className="App-content">
           {this.props.children}
         </div>
-          <Footer />
+        <Mail />
+        <Footer />
       </div>
     );
   }

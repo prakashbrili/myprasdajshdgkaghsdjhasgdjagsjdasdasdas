@@ -15,10 +15,6 @@ class Home extends Component {
 
     pageScroll() {
         console.log("scroll");
-        // window.scrollBy(0,300); // horizontal and vertical scroll increments
-        // let scrolldelay = setTimeout('pageScroll()',100); // scrolls every 100 milliseconds
-        // clearTimeout(scrolldelay);
-
         window.scrollBy({
             top: 600, // could be negative value
             left: 0,

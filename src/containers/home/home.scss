@@ -16,6 +16,10 @@ body{
   background-size: 100% 100% ;
   background-attachment: fixed;
   background-position: center;
+  @media only screen and (max-width: 450px){
+    background-size: cover;
+  }
+
 }
 .homePage{
   //background: url('../../static/images/headerpage.jpg') no-repeat;
